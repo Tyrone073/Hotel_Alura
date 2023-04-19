@@ -1,4 +1,4 @@
-package com.hotel_alura.modelo;
+package com.tyrone.hotel_alura.modelo;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;

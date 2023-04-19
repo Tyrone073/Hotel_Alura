@@ -1,7 +1,6 @@
-package com.hotel_alura.modelo;
+package com.tyrone.hotel_alura.modelo;
 
 import javax.persistence.Embeddable;
-import javax.persistence.Embedded;
 
 @Embeddable//esto es para injectar algo y se aconpaña con un @Embedded en la clase q se desea
 public class DatosPersonales {
