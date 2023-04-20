@@ -11,7 +11,7 @@ public class DatosPersonales {
 	
 	
 	public DatosPersonales() {
-		super();
+
 	}
 	
 	public DatosPersonales(String nombre, String dni) {
