@@ -8,6 +8,7 @@ public class HotelAluraMain {//esta clase es para llamar al frame y permitir ava
 
 	public static void main(String[] args) {
 		HotelAluraFrame aluraFrame = new HotelAluraFrame();
+
 		aluraFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }

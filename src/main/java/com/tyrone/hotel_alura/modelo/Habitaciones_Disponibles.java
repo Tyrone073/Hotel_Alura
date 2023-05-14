@@ -46,29 +46,29 @@ public class Habitaciones_Disponibles {
 
 
 
-	public long getId() {
-		return id;
+	public long getIdDeHabitacion() {
+		return idDeHabitacion;
 	}
-	public void setId(long id) {
-		this.id = id;
+	public void setIdDeHabitacion(long idDeHabitacion) {
+		this.idDeHabitacion = idDeHabitacion;
 	}
-	public String getNombre() {
-		return nombre;
-	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+//	public String getDescripcion() {
+//		return descripcion;
+//	}
+//	public void setNombre(String nombre) {
+//		this.nombre = nombre;
+//	}
 	public String getDescripcion() {
 		return descripcion;
 	}
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public BigDecimal getPrecio() {
-		return precio;
+	public BigDecimal getPrecioPorDia() {
+		return precioPorDia;
 	}
-	public void setPrecio(BigDecimal precio) {
-		this.precio = precio;
+	public void setPrecio(BigDecimal precioPorDia) {
+		this.precioPorDia = precioPorDia;
 	}
 	
 	
