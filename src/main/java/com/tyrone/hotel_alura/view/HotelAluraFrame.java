@@ -19,7 +19,7 @@ public class HotelAluraFrame extends JFrame {
 
 		// Panel izquierdo (imagen)
 		ImageIcon imagenIzquierda = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/menu-img.png"));//instanciamos una imagen
-		Image scaledInstance = imagenIzquierda.getImage().getScaledInstance(745, 537, Image.SCALE_SMOOTH);
+		Image scaledInstance = imagenIzquierda.getImage().getScaledInstance(705, 475, Image.SCALE_SMOOTH);
 		ImageIcon imagenescaleada = new ImageIcon(scaledInstance);
 		//private JPanel panel = new JPanel(new GridLayout(1,1));
 		JLabel labelIzquierda = new JLabel(imagenescaleada);//la combertimos en un objeto
@@ -36,9 +36,29 @@ public class HotelAluraFrame extends JFrame {
 		//panel.add(panelDerecho, FlowLayout.LEFT);// este es el posisionamiento del panel derecho y creo q deve de ser casteado una sola vez
 
 		//JPanel panelCentralDerecho = new JPanel(new GridLayout(3, 1));//creo un panel q tiene 3 filas
+		JPanel contenidoLogin = new JPanel();
+		contenidoLogin.setLayout(new BoxLayout(contenidoLogin, BoxLayout.Y_AXIS));
+		JLabel textoLogin = new JLabel("Login");
 		ImageIcon imagenCentralDerecha = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/login.png"));//instatancio una imagen
+		//Image imagenderechasentralsc = imagenCentralDerecha.getImage().getScaledInstance(155, 155, Image.SCALE_SMOOTH);
+		//ImageIcon imagenderechasentral = new ImageIcon(imagenderechasentralsc);
 		labelImagenDerecha = new JLabel(imagenCentralDerecha);//combierto la imagen en un objeto label
-		panelDerecho.add(labelImagenDerecha);//agrego ese objeto a panel creado de 3 fila
+		JButton botonLogin = new JButton();
+		contenidoLogin.add(textoLogin);
+
+		botonLogin.add(labelImagenDerecha);
+		//botonLogin.setSize(155,155);
+		botonLogin.setBorderPainted(false); // Desactiva el borde pintado
+		botonLogin.setContentAreaFilled(false); // Desactiva el área de contenido pintada
+		botonLogin.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // Establece el cursor a mano
+
+		contenidoLogin.add(botonLogin);
+		//botonLogin.setForeground(Color.BLUE);
+		//botonLogin.setIcon(imagenCentralDerecha);
+
+		//panel.add(botonLogin, BorderLayout.EAST);
+		panelDerecho.add(contenidoLogin);//agrego este objeto imagen al panelderecho
+		//panelDerecho.add(labelImagenDerecha);//agrego ese objeto a panel creado de 3 fila
 		//panel.add(panelCentralDerecho, BorderLayout.CENTER);// agrego se objeto panel al panel padre
 		//panel.add(panelDerecho, BorderLayout.EAST);
 		//panel.add(panelDerecho, FlowLayout.RIGHT);
@@ -67,7 +87,7 @@ public class HotelAluraFrame extends JFrame {
 
 
 		frame.add(panel);
-		frame.setSize(910, 537);
+		frame.setSize(910, 540);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
 		frame.setResizable(false);//desactivo q la ventana se pueda modificar ......
