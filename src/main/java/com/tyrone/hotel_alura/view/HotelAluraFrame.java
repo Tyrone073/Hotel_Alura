@@ -1,53 +1,63 @@
 package com.tyrone.hotel_alura.view;
 
+import com.tyrone.hotel_alura.modelo.DatosAutenticacionUsuario;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
 
 public class HotelAluraFrame extends JFrame {
-	private  JFrame frame ;
-	private JPanel panel = new JPanel(new BorderLayout()); ;//se crea un panel con la posibilidad de utilizar el borde q es para decirle una direccion
+	;//se crea un panel con la posibilidad de utilizar el borde q es para decirle una direccion
 
-	private JLabel labelIzquierda;
-
-	private JLabel labelImagenDerecha;
-
-	JPanel panelDerecho = new JPanel(new GridLayout(3,0));
-	private JPanel footer;
 	//public static void main(String[] args) {
 	public HotelAluraFrame(){
 
-		frame = new JFrame("Ejemplo de imagen");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JFrame frame = new JFrame("Ejemplo de imagen");
 
+		JPanel panel = new JPanel(new BorderLayout());
 		panel.setBackground(Color.blue);
 
 		// Panel izquierdo (imagen)
 		ImageIcon imagenIzquierda = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/menu-img.png"));//instanciamos una imagen
-		labelIzquierda = new JLabel(imagenIzquierda);//la combertimos en un objeto
-		labelIzquierda.setPreferredSize(new Dimension(700, 537));//le damos un tamaño
-		panel.add(labelIzquierda, BorderLayout.WEST);//la agregamos en el panel y debe de recibir un dato de tipo BorderLayout aprobechamos para decirl en q parte de lo coloca
+		Image scaledInstance = imagenIzquierda.getImage().getScaledInstance(745, 537, Image.SCALE_SMOOTH);
+		ImageIcon imagenescaleada = new ImageIcon(scaledInstance);
+		//private JPanel panel = new JPanel(new GridLayout(1,1));
+		JLabel labelIzquierda = new JLabel(imagenescaleada);//la combertimos en un objeto
+
+		panel.add(labelIzquierda,BorderLayout.WEST);//la agregamos en el panel y debe de recibir un dato de tipo BorderLayout aprobechamos para decirl en q parte de lo coloca
+		//panel.add(labelIzquierda, BorderLayout.WEST);
 
 		// Panel superior derecho
 		//JPanel panelSuperiorDerecho = new JPanel(new GridLayout(2, 1));
 		ImageIcon imagenSuperiorDerecha = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/aH-150px.png"));
-		labelImagenDerecha = new JLabel(imagenSuperiorDerecha);
+		JLabel labelImagenDerecha = new JLabel(imagenSuperiorDerecha);
+		JPanel panelDerecho = new JPanel(new GridLayout(3, 0));
 		panelDerecho.add(labelImagenDerecha);
-		panel.add(panelDerecho, BorderLayout.EAST);// este es el posisionamiento del panel derecho y creo q deve de ser casteado una sola vez
+		//panel.add(panelDerecho, FlowLayout.LEFT);// este es el posisionamiento del panel derecho y creo q deve de ser casteado una sola vez
 
 		//JPanel panelCentralDerecho = new JPanel(new GridLayout(3, 1));//creo un panel q tiene 3 filas
 		ImageIcon imagenCentralDerecha = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/login.png"));//instatancio una imagen
 		labelImagenDerecha = new JLabel(imagenCentralDerecha);//combierto la imagen en un objeto label
 		panelDerecho.add(labelImagenDerecha);//agrego ese objeto a panel creado de 3 fila
 		//panel.add(panelCentralDerecho, BorderLayout.CENTER);// agrego se objeto panel al panel padre
-		panel.add(panelDerecho, BorderLayout.EAST);
+		//panel.add(panelDerecho, BorderLayout.EAST);
+		//panel.add(panelDerecho, FlowLayout.RIGHT);
+
 
 		ImageIcon imagenInferiorDerecha = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/cerrar-sesion 32-px.png"));//instatancio una imagen
-		labelImagenDerecha = new JLabel(imagenInferiorDerecha);//combierto la imagen en un objeto label
-		panelDerecho.add(labelImagenDerecha);//agrego este objeto imagen al panelderecho
+		//labelImagenDerecha = new JLabel(imagenInferiorDerecha);//combierto la imagen en un objeto label
+		JButton boton = new JButton("ejemplo");
+		boton.setIcon(imagenInferiorDerecha);
+		panelDerecho.add(boton);//agrego este objeto imagen al panelderecho
+
+
 		panel.add(panelDerecho, BorderLayout.EAST);
 
+//		panel.add(panelDerecho, FlowLayout.RIGHT);
+
 		// Panel inferior derecho
-		footer = new JPanel(new FlowLayout(FlowLayout.CENTER));//para poner el texto en el centro
+		//private JPanel panelIzquierdo =new JPanel(new GridLayout()) ;
+		JPanel footer = new JPanel(new FlowLayout(FlowLayout.CENTER));//para poner el texto en el centro
 		JLabel copyRigt = new JLabel("Desarrollado por Tyrone Pilay en © 2023");
 		copyRigt.setForeground(Color.white);// el setForeground es para canbiar el color del font
 		footer.add(copyRigt);
@@ -55,10 +65,23 @@ public class HotelAluraFrame extends JFrame {
 		//copyRigt.setHorizontalTextPosition(FlowLayout.CENTER);
 		panel.add(footer, BorderLayout.SOUTH);
 
+
 		frame.add(panel);
 		frame.setSize(910, 537);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
+		frame.setResizable(false);//desactivo q la ventana se pueda modificar ......
 //	}
+
+//		//Botón Login
+//				JPanel btnLogin = new JPanel();
+//				btnLogin.setBounds(754, 300, 83, 70);
+//				btnLogin.addMouseListener(new MouseAdapter() {
+//					public void mouseClicked(MouseEvent e) {
+//						DatosAutenticacionUsuario login = new DatosAutenticacionUsuario();
+////						login.setVisible(true);
+////						dispose();
+//					}
+//				});
 	}
 }
