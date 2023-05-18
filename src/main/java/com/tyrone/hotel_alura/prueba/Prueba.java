@@ -52,7 +52,7 @@ import java.awt.event.MouseMotionAdapter;
 				contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 				setContentPane(contentPane);
 				contentPane.setLayout(null);
-				setResizable(false);
+				//setResizable(false);
 				setLocationRelativeTo(null);
 				setUndecorated(true);
 
@@ -73,7 +73,7 @@ import java.awt.event.MouseMotionAdapter;
 				logo.setIcon(new ImageIcon(Prueba.class.getResource("/imagenes/aH-150px.png")));
 				panel.add(logo);
 
-				JPanel panel_1 = new JPanel();
+				JPanel panel_1 = new JPanel();//pala.. login
 				panel_1.setBounds(0, 500, 910, 37);
 				panel_1.setBackground(new Color(12, 138, 199));
 				panel.add(panel_1);

@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f67bc61-398b-45d9-8452-d6d7f2b4acce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/prueba/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/prueba/Prueba.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/view/HotelAluraFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/view/HotelAluraFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.tyrone/prueba/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.tyrone/prueba/pom.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,9 @@
       <workItem from="1684181921437" duration="1225000" />
       <workItem from="1684183637422" duration="2867000" />
       <workItem from="1684263869392" duration="5670000" />
-      <workItem from="1684270135158" duration="2830000" />
+      <workItem from="1684270135158" duration="3130000" />
+      <workItem from="1684351194698" duration="8331000" />
+      <workItem from="1684437620559" duration="5903000" />
     </task>
     <servers />
   </component>
@@ -138,5 +140,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/view/HotelAluraFrame.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
