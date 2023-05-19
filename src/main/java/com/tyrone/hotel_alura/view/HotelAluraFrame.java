@@ -49,8 +49,17 @@ public class HotelAluraFrame extends JFrame {
         //panelDerecho.setAlignmentX(25);
 		//panel.add(labelLogo);
 		//panel.add(panelDerecho, FlowLayout.LEFT);// este es el posisionamiento del panel derecho y creo q deve de ser casteado una sola vez
+		//Container container = getContentPane();
+
+
+
+//			textoNombre = new JTextField();
+//			textoDescripcion = new JTextField();
+//			textoCantidad = new JTextField();
+//			container.add(textoNombre);
 
 		JPanel cajaLogin = new JPanel(new GridLayout(4,1));
+		cajaLogin.setBackground(Color.white);
 
 
 		//JPanel panelCentralDerecho = new JPanel(new GridLayout(3, 1));//creo un panel q tiene 3 filas
@@ -71,41 +80,86 @@ public class HotelAluraFrame extends JFrame {
 		//Image imagenderechasentralsc = imagenCentralDerecha.getImage().getScaledInstance(155, 155, Image.SCALE_SMOOTH);
 		//ImageIcon imagenderechasentral = new ImageIcon(imagenderechasentralsc);
 		//JLabel labelImagenDerechaCentral = new JLabel(imagenCentralDerecha);//combierto la imagen en un objeto label
-		JButton botonLogin = new JButton();
+		JButton botonInicioDeSesion = new JButton();
 		//contenidoLogin.add(textoLogin);
-		botonLogin.setIcon(imagenCentralDerecha);
-		//botonLogin.add(labelImagenDerechaCentral);
-		//botonLogin.setSize(155,155);
-		botonLogin.setBorderPainted(false); // Desactiva el borde pintado
-		botonLogin.setContentAreaFilled(false); // Desactiva el área de contenido pintada
-		botonLogin.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // Establece el cursor a mano
-		//botonLogin.
+		botonInicioDeSesion.setIcon(imagenCentralDerecha);
+		//botonInicioDeSesion.add(labelImagenDerechaCentral);
+		//botonInicioDeSesion.setSize(155,155);
+		botonInicioDeSesion.setBorderPainted(false); // Desactiva el borde pintado
+		botonInicioDeSesion.setContentAreaFilled(false); // Desactiva el área de contenido pintada
+		botonInicioDeSesion.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // Establece el cursor a mano
+		//botonInicioDeSesion.
 
-		//contenidoLogin.add(botonLogin);
-		//botonLogin.setForeground(Color.BLUE);
-		//botonLogin.setIcon(imagenCentralDerecha);
+		//contenidoLogin.add(botonInicioDeSesion);
+		//botonInicioDeSesion.setForeground(Color.BLUE);
+		//botonInicioDeSesion.setIcon(imagenCentralDerecha);
 
-		//panel.add(botonLogin, BorderLayout.EAST);
+		//panel.add(botonInicioDeSesion, BorderLayout.EAST);
 		//panelDerecho.add(contenidoLogin);//agrego este objeto imagen al panelderecho
 
-		cajaLogin.add(botonLogin);
-//		panelDerecho.add(botonLogin, BorderLayout.CENTER);
+		cajaLogin.add(botonInicioDeSesion);
+//		panelDerecho.add(botonInicioDeSesion, BorderLayout.CENTER);
 
-		botonLogin.addActionListener(e -> {
+		botonInicioDeSesion.addActionListener(e -> {
 			// Código a ejecutar cuando se presione el botón
-			if (botonLogin.getVerifyInputWhenFocusTarget()) {
+			if (botonInicioDeSesion.getVerifyInputWhenFocusTarget()) {
 				System.out.println("¡Hola! El botón ha sido presionado.");
+
+				JLabel labelUsuario = new JLabel("Usuario:");
+				//JPanel panelTexUsuario = new JPanel();
+				JTextField textFieldUsuario = new JTextField("Usuario");
+				JButton botonLogIn = new JButton("Log In");
+				JLabel labelPassword = new JLabel("Password:");
+				JTextField textFieldPassword = new JTextField("contra");
+				JLabel espacio = new JLabel(" ");
+				JLabel espacio1 = new JLabel(" ");
+
+				//labelUsuario.setBounds(10, 10, 240, 15);
+				//textFieldUsuario.setBounds(10, 10, 40, 10);
+				//labelPassword.setBounds(10, 50, 240, 15);
+				//textFieldUsuario.setSize(40,45);
+				//panelTexUsuario.add(textFieldUsuario);
+
+				labelUsuario.setForeground(Color.BLACK);
+				labelPassword.setForeground(Color.BLACK);
+
+				//botonLogIn.setContentAreaFilled(Color.BLACK);
+				botonLogIn.setBackground(new Color(12, 138, 199));
+				botonLogIn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));//cambia a mano
+				botonLogIn.setForeground(Color.WHITE);
+				botonLogIn.setFont(new Font("Roboto Light", Font.PLAIN, 15));
+				//botonLogIn.setBorder(BorderFactory.createBevelBorder(23));
+
+
+				cajaLogin.add(labelUsuario);
+				//textoLogin.setText(textFieldUsuario);
+				//textFieldUsuario.setText("usuari");
+				cajaLogin.remove(textoLogin);
+				cajaLogin.add(textFieldUsuario);
+
+				cajaLogin.add(labelPassword);
+
+				cajaLogin.remove(botonInicioDeSesion);
+				cajaLogin.add(textFieldPassword);
+
+				cajaLogin.add(botonLogIn);
+				cajaLogin.add(espacio);
+				cajaLogin.add(espacio1);
+
+				cajaLogin.setLayout(new GridLayout(8,1));
 
 				ImageIcon imagenInferiorDerecha = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/cerrar-sesion 32-px.png"));//instatancio una imagen
 				//labelLogo = new JLabel(imagenInferiorDerecha);//combierto la imagen en un objeto label
-				JButton boton = new JButton();
-				boton.setIcon(imagenInferiorDerecha);
-				boton.setHorizontalAlignment(SwingConstants.RIGHT);//le dogp q se ubique a la derecha
-				boton.setBorderPainted(false); // Desactiva el borde pintado
-				boton.setContentAreaFilled(false); // Desactiva el área de contenido pintada
-				boton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // Establece el cursor a mano
-				boton.setVerticalAlignment(SwingConstants.BOTTOM);
-				cajaLogin.add(boton);//agrego este objeto imagen al panelderecho
+				JButton botonLogOut = new JButton();
+				botonLogOut.setIcon(imagenInferiorDerecha);
+				botonLogOut.setHorizontalAlignment(SwingConstants.RIGHT);//le dogp q se ubique a la derecha
+				//botonLogOut.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+				//botonLogOut.setVerticalAlignment(SwingConstants.SOUTH_EAST);
+				botonLogOut.setBorderPainted(false); // Desactiva el borde pintado
+				botonLogOut.setContentAreaFilled(false); // Desactiva el área de contenido pintada
+				botonLogOut.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // Establece el cursor a mano
+				botonLogOut.setVerticalAlignment(SwingConstants.BOTTOM);
+				cajaLogin.add(botonLogOut);//agrego este objeto imagen al panelderecho
 
 				// Importante: Si agregaste un nuevo componente al panel, debes actualizar su diseño
 				cajaLogin.revalidate();
