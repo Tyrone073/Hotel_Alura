@@ -5,36 +5,41 @@ import lombok.Setter;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import java.time.LocalDate;
 
 @Entity
-@Table(name = "clientes")
+@Table(name = "reserva")
 @Getter
 @Setter
-public class Cliente {
+public class Reserva {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Embedded //este es para referirse q algo se esta injectando
-    private DatosPersonales datosPersonales;
+    private DatosPersonalesClientes datosPersonalesClientes;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Reserva reserva;
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    private Reserva reserva;
+    private LocalDate fechaDeLaReserva= LocalDate.now();//se ocupara para ver el dia q se genero la reserva
 
-    public Cliente(String nombre, String dni) {
+    private LocalDate fechaReservada;
 
-        this.datosPersonales = new DatosPersonales(nombre, dni);
+    public Reserva(String nombre, String dni, LocalDate fechaReservada) {
+        this.datosPersonalesClientes = new DatosPersonalesClientes(nombre, dni);
+        this.fechaReservada= fechaReservada;
     }
 
-    public Cliente() {///
+    public Reserva() {///
     }
+
+
+
 
 //    public Long getId() {
 //        return id;

@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f67bc61-398b-45d9-8452-d6d7f2b4acce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddc07928-608b-452f-a34c-afffc7daa749.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddc07928-608b-452f-a34c-afffc7daa749.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/modelo/DatosAutenticacionUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/modelo/DatosAutenticacionUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/modelo/DatosPersonalesClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/modelo/DatosPersonalesClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/modelo/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/modelo/Reserva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/prueba/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/prueba/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/view/HotelAluraFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/view/HotelAluraFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tyrone/hotel_alura/modelo/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tyrone/hotel_alura/modelo/DatosPersonales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tyrone/hotel_alura/modelo/Reserva.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tyrone/hotel_alura/modelo/Reserva.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,37 +57,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/59399/eclipse-workspace/control-de-stock",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "8a5da52ed126447d359e70c05721a8aa",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/59399/Downloads/MCPE Oficial v1.19.83 - espacioapk.com.apk&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8a5da52ed126447d359e70c05721a8aa&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tyrone.hotel_alura.controller" />
       <recent name="com.tyrone.hotel_alura.prueba" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -88,7 +101,7 @@
       <recent name="com.tyrone.hotel_alura.modelo" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PruebaMenuUsuario">
     <configuration name="HotelAluraMain" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="19" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -98,6 +111,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PruebaMenuUsuario" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.tyrone.hotel_alura.prueba.PruebaMenuUsuario" />
+      <module name="Hotel_DESKTOP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.HotelAluraMain" />
+      <item itemvalue="Application.PruebaMenuUsuario" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -120,7 +144,20 @@
       <workItem from="1684270135158" duration="3130000" />
       <workItem from="1684351194698" duration="8331000" />
       <workItem from="1684437620559" duration="7463000" />
-      <workItem from="1684524403743" duration="5092000" />
+      <workItem from="1684524403743" duration="6291000" />
+      <workItem from="1684531173116" duration="777000" />
+      <workItem from="1684609490038" duration="7439000" />
+      <workItem from="1684782419726" duration="611000" />
+      <workItem from="1684869024708" duration="3273000" />
+      <workItem from="1684960980050" duration="632000" />
+      <workItem from="1685041701913" duration="16994000" />
+      <workItem from="1685145216350" duration="1961000" />
+      <workItem from="1685214664287" duration="5512000" />
+      <workItem from="1685390181680" duration="2797000" />
+      <workItem from="1685473590798" duration="4031000" />
+      <workItem from="1685479046515" duration="1194000" />
+      <workItem from="1685561105158" duration="6988000" />
+      <workItem from="1685645456599" duration="7064000" />
     </task>
     <servers />
   </component>
@@ -138,15 +175,11 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/view/HotelAluraFrame.java</url>
-          <line>214</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hotel_alura$HotelAluraMain.ic" NAME="HotelAluraMain Coverage Results" MODIFIED="1684616325788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
