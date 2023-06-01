@@ -1,7 +1,9 @@
 package com.tyrone.hotel_alura.modelo;
 
-import java.time.LocalDate;
+import lombok.Getter;
+import lombok.Setter;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -11,40 +13,48 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "reservas")
-public class Reserva {
+@Table(name = "clientes")
+@Getter
+@Setter
+public class Cliente {
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
-	
-	private LocalDate fechaDeLaReserva= LocalDate.now();//se ocupara para ver el dia q se genero la reserva
-	
-	@ManyToOne(fetch=FetchType.LAZY)//para q me traiga a los clientes si lo deseo
-	private Cliente cliente;
-	
-	
-	public Reserva() {//y este es para llamar a todas las reservas
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-	public Reserva(Cliente cliente) {// este es para llamar los datos del cliente y su reserva
-		this.cliente = cliente;
-	}
+    @Embedded //este es para referirse q algo se esta injectando
+    private DatosPersonales datosPersonales;
 
-	public LocalDate getFechaDeLaReserva() {
-		return fechaDeLaReserva;
-	}
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Reserva reserva;
 
-	public void setFechaDeLaReserva(LocalDate fecha) {
-		this.fechaDeLaReserva = fecha;
-	}
+    public Cliente(String nombre, String dni) {
 
-	public Cliente getCliente() {
-		return cliente;
-	}
+        this.datosPersonales = new DatosPersonales(nombre, dni);
+    }
 
-	public Long getId() {
-		return id;
-	}
-	
+    public Cliente() {///
+    }
+
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public String getNombre() {
+//        return datosPersonales.getNombre();
+//    }
+//
+//    public void setNombre(String nombre) {
+//        this.datosPersonales.setNombre(nombre);
+//    }
+//
+//    public String getDni() {
+//        return datosPersonales.getDni();
+//    }
+//
+//    public void setDni(String dni) {
+//        this.datosPersonales.setDni(dni);
+//    }
+
+
 }
