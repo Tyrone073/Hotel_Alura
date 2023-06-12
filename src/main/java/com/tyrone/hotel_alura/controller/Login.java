@@ -123,8 +123,8 @@ public class Login extends JFrame {
         botonLogIn.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                AbrirReserva reserva = new AbrirReserva();
-                reserva.setVisible(true);
+                MenuUsuario menuUsuario = new MenuUsuario();
+                menuUsuario.setVisible(true);
                 Window ventanaActual = SwingUtilities.getWindowAncestor((Component) e.getSource());
                 ventanaActual.dispose(); // Cierra la ventana actual en la cual se hizo la pulsación
 

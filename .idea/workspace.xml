@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f67bc61-398b-45d9-8452-d6d7f2b4acce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/SistemaDeReservas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/utils/FrameUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/AbrirReserva.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/MenuUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/MenuUsuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +74,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;8a5da52ed126447d359e70c05721a8aa&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -93,7 +98,7 @@
       <recent name="com.tyrone.hotel_alura.modelo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PruebaMenuUsuario">
+  <component name="RunManager" selected="Application.PruebaReserva">
     <configuration name="HotelAluraMain" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="19" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -110,8 +115,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PruebaModelo" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.tyrone.hotel_alura.prueba.PruebaModeloFrame" />
+      <module name="Hotel_DESKTOP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PruebaReserva" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.tyrone.hotel_alura.prueba.PruebaAbrirReserva" />
+      <module name="Hotel_DESKTOP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.HotelAluraMain" />
+      <item itemvalue="Application.PruebaReserva" />
+      <item itemvalue="Application.PruebaModelo" />
       <item itemvalue="Application.PruebaMenuUsuario" />
     </list>
   </component>
@@ -154,7 +175,10 @@
       <workItem from="1686078005486" duration="408000" />
       <workItem from="1686078509199" duration="831000" />
       <workItem from="1686080964273" duration="6568000" />
-      <workItem from="1686251552114" duration="8875000" />
+      <workItem from="1686251552114" duration="10979000" />
+      <workItem from="1686337681635" duration="7529000" />
+      <workItem from="1686428188344" duration="14913000" />
+      <workItem from="1686599717052" duration="3266000" />
     </task>
     <servers />
   </component>

@@ -8,10 +8,13 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.plaf.BorderUIResource;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class MenuUsuario extends JFrame {
+
     public  MenuUsuario(){
         setSize(925, 545);
         setLocationRelativeTo(null);
@@ -58,6 +61,16 @@ public class MenuUsuario extends JFrame {
         btmrRegistrar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // Establece el cursor a mano
         //btmrRegistrar.setBorder(BorderFactory.createEmptyBorder());
         //btmrRegistrar.setBorderPainted(false);
+        btmrRegistrar.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                SistemaDeReservas reserva = new SistemaDeReservas();
+                reserva.setVisible(true);
+                Window ventanaActual = SwingUtilities.getWindowAncestor((Component) e.getSource());
+                ventanaActual.dispose(); // Cierra la ventana actual en la cual se hizo la pulsación
+
+            }
+        });
         panelIzquierdo.add(btmrRegistrar);
 
         JButton btmBusqueda = new JButton("Busqueda");
