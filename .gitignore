@@ -1,2 +1,25 @@
-/target/
+
 /src/main/java/com/tyrone/hotel_alura/prueba
+# Carpeta de configuración de IDE
+.idea/
+
+# Configuración de VS Code
+.vscode/
+
+# Carpeta de configuración de Eclipse
+.settings/
+
+# Carpeta de archivos compilados
+target/
+
+# Otros archivos generados por el IDE o el sistema de construcción
+.classpath
+.project
+
+# Otros archivos de documentación o ayuda
+#HELP.md
+#README.md
+
+# Otros archivos específicos del proyecto
+api.iml
+#pom.xml

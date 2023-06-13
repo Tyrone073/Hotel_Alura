@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f67bc61-398b-45d9-8452-d6d7f2b4acce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/gifInProgress.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/SistemaDeReservas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/SistemaDeReservas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/utils/FrameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/utils/FrameUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/view/HotelAluraFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/view/HotelAluraFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +176,7 @@
       <workItem from="1686337681635" duration="7529000" />
       <workItem from="1686428188344" duration="14913000" />
       <workItem from="1686599717052" duration="6271000" />
-      <workItem from="1686683425713" duration="5228000" />
+      <workItem from="1686683425713" duration="6274000" />
     </task>
     <servers />
   </component>
