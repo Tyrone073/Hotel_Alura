@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f67bc61-398b-45d9-8452-d6d7f2b4acce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/SistemaDeReservas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/utils/FrameUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/gifInProgress.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/AbrirReserva.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/MenuUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/MenuUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/SistemaDeReservas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/SistemaDeReservas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/utils/FrameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/utils/FrameUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/view/HotelAluraFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/view/HotelAluraFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,36 +53,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2023.1.2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8a5da52ed126447d359e70c05721a8aa&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2023.1.2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
+    "spring.configuration.checksum": "8a5da52ed126447d359e70c05721a8aa",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.tyrone.hotel_alura.controller" />
@@ -98,7 +98,7 @@
       <recent name="com.tyrone.hotel_alura.modelo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PruebaReserva">
+  <component name="RunManager" selected="Application.HotelAluraMain">
     <configuration name="HotelAluraMain" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="19" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -178,7 +178,8 @@
       <workItem from="1686251552114" duration="10979000" />
       <workItem from="1686337681635" duration="7529000" />
       <workItem from="1686428188344" duration="14913000" />
-      <workItem from="1686599717052" duration="3266000" />
+      <workItem from="1686599717052" duration="6271000" />
+      <workItem from="1686683425713" duration="5228000" />
     </task>
     <servers />
   </component>
@@ -195,6 +196,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

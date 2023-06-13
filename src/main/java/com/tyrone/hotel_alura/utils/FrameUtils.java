@@ -1,7 +1,6 @@
 package com.tyrone.hotel_alura.utils;
 
 import com.tyrone.hotel_alura.HotelAluraMain;
-import com.tyrone.hotel_alura.controller.MenuUsuario;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,11 +8,16 @@ import java.awt.event.*;
 
 public class FrameUtils {
 
+    /**
+     * Configura el frame
+     *
+     * @param frame El frame donde se agregará toda la configuracion.
+     *
+     */
     public static void configuraFrame(JFrame frame) {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setUndecorated(true);
-
-        // Crear un botón de cierre personalizado
+        frame.setResizable(false);//desactivo q la ventana se pueda modificar ......
 
         ImageIcon logo = new ImageIcon(HotelAluraMain.class.getResource("/imagenes/aH-40px.png"));
         frame.setIconImage(logo.getImage());
@@ -21,7 +25,14 @@ public class FrameUtils {
 
     }
 
-    public static void agregaX(JPanel panel, Color background) {
+    /**
+     * Agrega el boton de cierre "X"
+     *
+     * @param panel El panel donde se agregará el boton.
+     * @param background El color de fondo del boton.
+     *
+     */
+    public static void agregaBotonX(JPanel panel, Color background) {
         JButton closeButton = new JButton();
         closeButton.setLayout(null);
         closeButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));//cambia a mano
@@ -59,5 +70,6 @@ public class FrameUtils {
         panel.setVisible(true);
 
     }
+
 }
 

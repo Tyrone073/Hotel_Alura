@@ -1,9 +1,9 @@
 package com.tyrone.hotel_alura.view;
 
 import com.tyrone.hotel_alura.controller.Login;
+import com.tyrone.hotel_alura.utils.FrameUtils;
 
 import javax.swing.*;
-import javax.swing.plaf.ColorUIResource;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -13,76 +13,43 @@ public class HotelAluraFrame extends JFrame {
 
 	//public static void main(String[] args) {
 	public HotelAluraFrame(){
-        setSize(925,545);
-		setTitle("Bienvenido a Hotel Alura");
-//		setBackground(new ColorUIResource(109, 208, 29));
-		ImageIcon logo1 = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/aH-40px.png"));
-		/* frame.*/setIconImage(logo1.getImage());//para agregarle el logo a la app sin el .getImagen no me va a permitir agregarlo porq solo permite Imagen y el mio es imagenIcon
+        setSize(910, 537);
+		setLocationRelativeTo(null);
+		FrameUtils.configuraFrame(this);
 
-		JPanel panel = new JPanel(new BorderLayout());
-		// JPanel panel = new JPanel();
+		JPanel panel = new JPanel(null);
+
 		add(panel);
-		panel.setBackground(Color.blue);
 
-
-// POR PROBLEMA  DE REDERIMIENTO DE CREACION DE VENTANAS ES MEJOR NO INSTANCIAR UN FRAME SINO DE UTILIZAR UNO PROPORCIONADO POR DEFAULT, COLO LO DE ARRIBA
-//		JFrame frame = new JFrame("Hotel Alura");
-//        frame.setSize(925, 545);
-//        frame.setLocationRelativeTo(null);
-//        frame.setVisible(true);
-//        frame.setResizable(false);//desactivo q la ventana se pueda modificar ......
-//        //frame.setBackground(Color.CYAN);
-
-
-
-       // panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
-
-		// Panel izquierdo (imagen)
 		ImageIcon imagenIzquierda = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/menu-img.png"));//instanciamos una imagen
-		Image scaledInstance = imagenIzquierda.getImage().getScaledInstance(710, 480, Image.SCALE_SMOOTH);
-		ImageIcon imagenescaleada = new ImageIcon(scaledInstance);
-		//private JPanel panel = new JPanel(new GridLayout(1,1));
-		JLabel labelIzquierda = new JLabel(imagenescaleada);//la combertimos en un objeto
 
-		panel.add(labelIzquierda,BorderLayout.WEST);//la agregamos en el panel y debe de recibir un dato de tipo BorderLayout aprobechamos para decirl en q parte de lo coloca
-		//panel.add(labelIzquierda, BorderLayout.WEST);
 
-		// Panel superior derecho
-		//JPanel panelSuperiorDerecho = new JPanel(new GridLayout(2, 1));
-		ImageIcon logoImagen = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/aH-150px.png"));
-		JLabel labelLogo = new JLabel(logoImagen);
-        //labelLogo.setAlignmentY(1);
-		//labelLogo.setBounds(-50, 0, 732, 501);
-		//labelLogo.setVerticalAlignment(SwingConstants.BOTTOM);//para hacer q baje dentro de su cuadro
-	//	JPanel panelDerecho = new JPanel(/*new GridLayout(4, 0)*/);
-        JPanel panelDerecho = new JPanel(new BorderLayout());
+		//JLabel labelIzquierda = new JLabel(new ImageIcon(scaledInstance));//la combertimos en un objeto
+		JLabel labelIzquierda = new JLabel(new ImageIcon(imagenIzquierda.getImage().getScaledInstance(740, 500, Image.SCALE_SMOOTH)));
+		labelIzquierda.setBounds(0,0,680,500);
+		panel.add(labelIzquierda);//la agregamos en el panel y debe de recibir un dato de tipo BorderLayout aprobechamos para decirl en q parte de lo coloca
+
+
+        JPanel panelDerecho = new JPanel(null);
+		panelDerecho.setBounds(680,0, 230,500);
+		panelDerecho.setBackground(Color.white);
+		//panelDerecho.setSize(200,510);
+		FrameUtils.agregaBotonX(panelDerecho,Color.white);
  		//JPanel panelDerecho = new JPanelnew BorderLayout()
-      //panelDerecho.setLayout(new BoxLayout(panelDerecho, BoxLayout.PAGE_AXIS));
-		//labelLogo.setVerticalAlignment(SwingConstants.BOTTOM);
-//        labelLogo.setHorizontalTextPosition(SwingConstants.CENTER);
+
+		JLabel labelLogo = new JLabel(new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/aH-150px.png")));
+		labelLogo.setBounds(40,80 ,150,150);
        // labelLogo.setBounds(730,50,100,300);
 		//labelLogo.setVerticalAlignment(SwingConstants.BOTTOM);
-		panelDerecho.add(labelLogo, BorderLayout.NORTH);
-        //panelDerecho.setAlignmentX(25);
-		//panel.add(labelLogo);
-		//panel.add(panelDerecho, FlowLayout.LEFT);// este es el posisionamiento del panel derecho y creo q deve de ser casteado una sola vez
-		//Container container = getContentPane();
+		panelDerecho.add(labelLogo);
 
 
-
-//			textoNombre = new JTextField();
-//			textoDescripcion = new JTextField();
-//			textoCantidad = new JTextField();
-//			container.add(textoNombre);
-
-		JPanel cajaLogin = new JPanel(new GridLayout(4,1));
-		cajaLogin.setBackground(Color.white);
+//		JPanel cajaLogin = new JPanel(new GridLayout(4,1));
+//		cajaLogin.setBounds(0,250,230,200);
+//		cajaLogin.setBackground(Color.white);
 
 
-		//JPanel panelCentralDerecho = new JPanel(new GridLayout(3, 1));//creo un panel q tiene 3 filas
-		//JPanel contenidoLogin = new JPanel();
-		//contenidoLogin.setLayout(new BoxLayout(contenidoLogin, BoxLayout.Y_AXIS));
-		JLabel textoLogin = new JLabel("LOGIN", SwingConstants.CENTER);
+		JLabel textoLogin = new JLabel("LOGIN");
 //		textoLogin.setSize(50,30);
 //		textoLogin.setBackground(Color.CYAN);
 		//textoLogin.setVerticalAlignment(SwingConstants.BOTTOM);//para hacer q baje dentro de su cuadro
@@ -90,131 +57,53 @@ public class HotelAluraFrame extends JFrame {
 		textoLogin.setFont(new Font("Roboto Light", Font.PLAIN, 20));
 		//textoLogin.setPreferredSize(new Dimension(textoLogin.getPreferredSize().width, textoLogin.getPreferredSize().height));//para q se ajusrte al texto
 //		panelDerecho.add(textoLogin/*, BorderLayout.CENTER*/);
-		cajaLogin.add(textoLogin/*, BorderLayout.CENTER*/);
+		textoLogin.setBounds(85,260,100,30);
+		panelDerecho.add(textoLogin/*, BorderLayout.CENTER*/);
 
 
-		ImageIcon imagenCentralDerecha = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/login.png"));//instatancio una imagen
-		//Image imagenderechasentralsc = imagenCentralDerecha.getImage().getScaledInstance(155, 155, Image.SCALE_SMOOTH);
-		//ImageIcon imagenderechasentral = new ImageIcon(imagenderechasentralsc);
-		//JLabel labelImagenDerechaCentral = new JLabel(imagenCentralDerecha);//combierto la imagen en un objeto label
+		ImageIcon imgDeBotonLogin = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/login.png"));//instatancio una imagen
+
 		JButton botonInicioDeSesion = new JButton();
 		//contenidoLogin.add(textoLogin);
-		botonInicioDeSesion.setIcon(imagenCentralDerecha);
+		botonInicioDeSesion.setIcon(imgDeBotonLogin);
 		//botonInicioDeSesion.add(labelImagenDerechaCentral);
 		//botonInicioDeSesion.setSize(155,155);
 		botonInicioDeSesion.setBorderPainted(false); // Desactiva el borde pintado
 		botonInicioDeSesion.setContentAreaFilled(false); // Desactiva el área de contenido pintada
 		botonInicioDeSesion.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // Establece el cursor a mano
-		//botonInicioDeSesion.
-
-		//contenidoLogin.add(botonInicioDeSesion);
-		//botonInicioDeSesion.setForeground(Color.BLUE);
-		//botonInicioDeSesion.setIcon(imagenCentralDerecha);
-
-		//panel.add(botonInicioDeSesion, BorderLayout.EAST);
-		//panelDerecho.add(contenidoLogin);//agrego este objeto imagen al panelderecho
-
-		cajaLogin.add(botonInicioDeSesion);
-//		panelDerecho.add(botonInicioDeSesion, BorderLayout.CENTER);
-
-	//	botonInicioDeSesion.addActionListener(n-> {
+		//b
 		botonInicioDeSesion.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-			Login login = new Login();
-			login.setVisible(true);
+				Login login = new Login();
+				login.setVisible(true);
 				Window ventanaActual = SwingUtilities.getWindowAncestor((Component) e.getSource());
 				ventanaActual.dispose(); // Cierra la ventana actual en la cual se hizo la pulsación
 
 
 				//dispose();//este dispuse es para q cierre la ventana actual al momento de hacer la pulsacion
 			}
-//				JLabel labelUsuario = new JLabel("Usuario:");
-//				//JPanel panelTexUsuario = new JPanel();
-//				JTextField textFieldUsuario = new JTextField("Usuario");
-//				JButton botonLogIn = new JButton("Log In");
-//				JLabel labelPassword = new JLabel("Password:");
-//				JTextField textFieldPassword = new JTextField("contra");
-//				JLabel espacio = new JLabel(" ");
-//				JLabel espacio1 = new JLabel(" ");
-//
-//				//labelUsuario.setBounds(10, 10, 240, 15);
-//				//textFieldUsuario.setBounds(10, 10, 40, 10);
-//				//labelPassword.setBounds(10, 50, 240, 15);
-//				//textFieldUsuario.setSize(40,45);
-//				//panelTexUsuario.add(textFieldUsuario);
-//
-//				labelUsuario.setForeground(Color.BLACK);
-//				labelPassword.setForeground(Color.BLACK);
-//
-//				//botonLogIn.setContentAreaFilled(Color.BLACK);
-//				botonLogIn.setBackground(new Color(12, 138, 199));
-//				botonLogIn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));//cambia a mano
-//				botonLogIn.setForeground(Color.WHITE);
-//				botonLogIn.setFont(new Font("Roboto Light", Font.PLAIN, 15));
-//				//botonLogIn.setBorder(BorderFactory.createBevelBorder(23));
-//
-//
-//				cajaLogin.add(labelUsuario);
-//				//textoLogin.setText(textFieldUsuario);
-//				//textFieldUsuario.setText("usuari");
-//				cajaLogin.remove(textoLogin);
-//				cajaLogin.add(textFieldUsuario);
-//
-//				cajaLogin.add(labelPassword);
-//
-//				cajaLogin.remove(botonInicioDeSesion);
-//				cajaLogin.add(textFieldPassword);
-//
-//				cajaLogin.add(botonLogIn);
-//				cajaLogin.add(espacio);
-//				cajaLogin.add(espacio1);
-//
-//				cajaLogin.setLayout(new GridLayout(8,1));
-//
-//				ImageIcon imagenInferiorDerecha = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/cerrar-sesion 32-px.png"));//instatancio una imagen
-//				//labelLogo = new JLabel(imagenInferiorDerecha);//combierto la imagen en un objeto label
-//				JButton botonLogOut = new JButton();
-//				botonLogOut.setIcon(imagenInferiorDerecha);
-//				botonLogOut.setHorizontalAlignment(SwingConstants.RIGHT);//le dogp q se ubique a la derecha
-//				//botonLogOut.setAlignmentY(Component.BOTTOM_ALIGNMENT);
-//				//botonLogOut.setVerticalAlignment(SwingConstants.SOUTH_EAST);
-//				botonLogOut.setBorderPainted(false); // Desactiva el borde pintado
-//				botonLogOut.setContentAreaFilled(false); // Desactiva el área de contenido pintada
-//				botonLogOut.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // Establece el cursor a mano
-//				botonLogOut.setVerticalAlignment(SwingConstants.BOTTOM);
-//				cajaLogin.add(botonLogOut);//agrego este objeto imagen al panelderecho
-//
-//				// Importante: Si agregaste un nuevo componente al panel, debes actualizar su diseño
-//			//	cajaLogin.revalidate();
-//			//	cajaLogin.repaint();
 
 		});
 
-		//panelDerecho.add(labelLogo);//agrego ese objeto a panel creado de 3 fila
-		//panel.add(panelCentralDerecho, BorderLayout.CENTER);// agrego se objeto panel al panel padre
-		//panel.add(panelDerecho, BorderLayout.EAST);
-		//panel.add(panelDerecho, FlowLayout.RIGHT);
+		botonInicioDeSesion.setBounds(65,285, 100,100);
+		panelDerecho.add(botonInicioDeSesion);
 
 
-        panelDerecho.setBackground(Color.white);
-//		panelDerecho.setPreferredSize(new Dimension(215, 65));
-//		panelDerecho.setAlignmentX(Component.CENTER_ALIGNMENT);
-//		panelDerecho.setAlignmentY(Component.CENTER_ALIGNMENT);
-		panelDerecho.add(cajaLogin, BorderLayout.SOUTH	);
-		panel.add(panelDerecho, BorderLayout.CENTER);//aqui le estoy diciendo q se balla a la derecha aunq diga center
+		panel.add(panelDerecho);//aqui le estoy diciendo q se balla a la derecha aunq diga center
 
 //		panel.add(panelDerecho, FlowLayout.RIGHT);
 
 		// Panel inferior derecho
 		//private JPanel panelIzquierdo =new JPanel(new GridLayout()) ;
 		JPanel footer = new JPanel(new FlowLayout(FlowLayout.CENTER));//para poner el texto en el centro
+		footer.setBounds(0,500,910,40);
+		footer.setBackground(new Color(33, 85, 155));
 		JLabel copyRigt = new JLabel("Desarrollado por Tyrone Pilay en © 2023");
 		copyRigt.setForeground(Color.white);// el setForeground es para canbiar el color del font
+		copyRigt.setFont(new Font("Roboto Light", Font.PLAIN, 17));
 		footer.add(copyRigt);
-		footer.setBackground(new Color(33, 85, 155));
-		//copyRigt.setHorizontalTextPosition(FlowLayout.CENTER);
-		panel.add(footer, BorderLayout.SOUTH);
+		panel.add(footer);
 
 
 		///*frame.*/add(panel);
@@ -239,9 +128,9 @@ public class HotelAluraFrame extends JFrame {
 ////						dispose();
 //					}
 //				});
-		setLocationRelativeTo(null);//los puse al final porq sino n me muestra el contenido
+	//	setLocationRelativeTo(null);//los puse al final porq sino n me muestra el contenido
 		setVisible(true);
-		setResizable(false);//desactivo q la ventana se pueda modificar ......
+		//setResizable(false);//desactivo q la ventana se pueda modificar ......
 //		setLayout(new GridLayout());
 	}
 }

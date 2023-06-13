@@ -3,19 +3,14 @@ package com.tyrone.hotel_alura.controller;
 import com.tyrone.hotel_alura.HotelAluraMain;
 import com.tyrone.hotel_alura.utils.FrameUtils;
 import com.tyrone.hotel_alura.view.HotelAluraFrame;
-import org.jdesktop.swingx.*;
 
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
+
 import org.jdesktop.swingx.JXDatePicker;
 
 public class SistemaDeReservas extends JFrame {
@@ -31,21 +26,21 @@ public class SistemaDeReservas extends JFrame {
 
         //setIconImage(logo1.getImage());
 
-        setSize(925,545);
+        setSize(910, 537);
 
         setLocationRelativeTo(null);
 
 
 
         JPanel panel = new JPanel(null/*new BorderLayout()*/);
-        panel.setBounds(0,0,925,545);//agregar esto porq el frame utils esta creado con un null
+        panel.setBounds(0,0,910, 537);//agregar esto porq el frame utils esta creado con un null
         add(panel);
-        FrameUtils.agregaX(panel, colorFondoBackgrounds);
+        FrameUtils.agregaBotonX(panel, colorFondoBackgrounds);
         //setContentPane(panel);
 
 
         JPanel panelIzquierdo = new JPanel(null);
-        panelIzquierdo.setBounds(0,0,400,527);
+        panelIzquierdo.setBounds(0,0,400,537);
        // panelIzquierdo.setSize(400, 527);
         panelIzquierdo.setBackground(Color.white);
 
@@ -151,7 +146,7 @@ public class SistemaDeReservas extends JFrame {
 //        panelIzquierdo.add(separator_1_2);
 
         JPanel panelDerechoPng = new JPanel(null/*new BorderLayout()*/);
-        panelDerechoPng.setBounds(400,0,519,527);
+        panelDerechoPng.setBounds(400,0,519,537);
 
 
         panelDerechoPng.setBackground(colorFondoBackgrounds);
