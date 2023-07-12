@@ -9,6 +9,8 @@ import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.Calendar;
 
 import org.jdesktop.swingx.JXDatePicker;
@@ -19,18 +21,9 @@ public class SistemaDeReservas extends JFrame {
     private    Color colorFondoBackgrounds = new Color(12, 138, 199);
 
     public SistemaDeReservas() {
-        ImageIcon logo1 = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/aH-40px.png"));
-       // ImageIcon logo1 = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/lOGO-50PX.png"));
-
         FrameUtils.configuraFrame(this);
-
-        //setIconImage(logo1.getImage());
-
         setSize(910, 537);
-
         setLocationRelativeTo(null);
-
-
 
         JPanel panel = new JPanel(null/*new BorderLayout()*/);
         panel.setBounds(0,0,910, 537);//agregar esto porq el frame utils esta creado con un null
@@ -44,15 +37,37 @@ public class SistemaDeReservas extends JFrame {
        // panelIzquierdo.setSize(400, 527);
         panelIzquierdo.setBackground(Color.white);
 
-        JButton btmRetroceder = new JButton("<");
-        btmRetroceder.setBounds(10,10,50,20);
-        btmRetroceder.addActionListener(new ActionListener() {
+        JButton btmRetroceder = new JButton();
+        btmRetroceder.setLayout(null);
+        btmRetroceder.setBorderPainted(false); // Desactiva el borde pintado
+        btmRetroceder.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));//cambia a mano        btmRetroceder.setBounds(0,0,53,36);
+        btmRetroceder.setBackground(Color.white);
+        btmRetroceder.setBounds(0,0,53, 36);
+
+        JLabel labelRetroceder = new JLabel("<");
+        labelRetroceder.setBounds(0,0,53,36);
+        labelRetroceder.setHorizontalAlignment(SwingConstants.CENTER);
+        labelRetroceder.setFont(new Font("Roboto", Font.PLAIN, 23));
+        btmRetroceder.add(labelRetroceder);
+        btmRetroceder.addMouseListener(new MouseAdapter() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void mouseClicked(MouseEvent e) {
                 MenuUsuario menuUsuario = new MenuUsuario();
                 menuUsuario.setVisible(true);
                 Window ventanaActual = SwingUtilities.getWindowAncestor((Component) e.getSource());
                 ventanaActual.dispose(); // Cierra la ventana actual en la cual se hizo la pulsación
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btmRetroceder.setBackground(Color.red);
+                labelRetroceder.setForeground(Color.white);
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btmRetroceder.setBackground(Color.white);
+                labelRetroceder.setForeground(Color.black);
             }
         });
 

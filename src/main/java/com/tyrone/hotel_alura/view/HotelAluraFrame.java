@@ -106,29 +106,6 @@ public class HotelAluraFrame extends JFrame {
 		panel.add(footer);
 
 
-		///*frame.*/add(panel);
-
-//	}
-		// Cambiar el color del borde
-//		Color borderColor = Color.RED;
-//		BorderUIResource borderResource = new BorderUIResource(BorderFactory.createMatteBorder(1, 1, 1, 1, borderColor));
-//		UIManager.put("InternalFrame.activeBorderColor", borderResource);
-//		UIManager.put("InternalFrame.inactiveBorderColor", borderResource);
-//		Color borderColor = Color.RED;
-//		frame.getRootPane().setBorder(BorderFactory.createLineBorder(borderColor, 3));
-
-
-//		//Botón Login
-//				JPanel btnLogin = new JPanel();
-//				btnLogin.setBounds(754, 300, 83, 70);
-//				btnLogin.addMouseListener(new MouseAdapter() {
-//					public void mouseClicked(MouseEvent e) {
-//						DatosAutenticacionUsuario login = new DatosAutenticacionUsuario();
-////						login.setVisible(true);
-////						dispose();
-//					}
-//				});
-	//	setLocationRelativeTo(null);//los puse al final porq sino n me muestra el contenido
 		setVisible(true);
 		//setResizable(false);//desactivo q la ventana se pueda modificar ......
 //		setLayout(new GridLayout());

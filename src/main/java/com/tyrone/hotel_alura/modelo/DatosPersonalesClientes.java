@@ -12,9 +12,6 @@ public class DatosPersonalesClientes {
 
 	private String nombre;
 	private String dni;
-	
-	
-	
 	public DatosPersonalesClientes() {
 
 	}

@@ -1,6 +1,7 @@
 package com.tyrone.hotel_alura.controller;
 
 import com.tyrone.hotel_alura.HotelAluraMain;
+import com.tyrone.hotel_alura.utils.FrameUtils;
 import com.tyrone.hotel_alura.view.HotelAluraFrame;
 import org.hibernate.type.LocalDateType;
 
@@ -16,16 +17,16 @@ import java.time.format.DateTimeFormatter;
 public class MenuUsuario extends JFrame {
 
     public  MenuUsuario(){
-        setSize(925, 545);
+        setSize(925, 537);
         setLocationRelativeTo(null);
+        FrameUtils.configuraFrame(this);
         JPanel panel = new JPanel(null  );
         add(panel);
-        setResizable(false);
 
 
         JPanel panelIzquierdo= new JPanel(null);
         panelIzquierdo.setBackground(new Color(12, 138, 199));
-        panelIzquierdo.setBounds(0,0 ,250, 525);
+        panelIzquierdo.setBounds(0,0 ,250, 537);
 
 
         JLabel logo = new JLabel(new ImageIcon(HotelAluraMain.class.getResource("/imagenes/aH-150px.png")));
@@ -85,10 +86,13 @@ public class MenuUsuario extends JFrame {
         btmBusqueda.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // Establece el cursor a mano
         btmBusqueda.setBorderPainted(false);
         panelIzquierdo.add(btmBusqueda);
+        panel.add(panelIzquierdo);
 
         JPanel panelDerecho= new JPanel(null);
         panelDerecho.setBackground(Color.white);
-        panelDerecho.setBounds(250,0,675,525);
+        panelDerecho.setBounds(250,0,675,537);
+
+        FrameUtils.agregaBotonX(panelDerecho,Color.white);
 
         JPanel panelDerechoSuperior = new JPanel(null);
         panelDerechoSuperior.setBackground(new Color(118, 187, 223));
@@ -130,8 +134,6 @@ public class MenuUsuario extends JFrame {
         panelDerecho.add(contenido);
         panelDerechoSuperior.add(h1);
         panelDerechoSuperior.add(fecha);
-
-        panel.add(panelIzquierdo);
         panel.add(panelDerecho);
 
     }

@@ -1,5 +1,6 @@
 package com.tyrone.hotel_alura.controller;
 
+import com.tyrone.hotel_alura.utils.FrameUtils;
 import com.tyrone.hotel_alura.view.HotelAluraFrame;
 
 import javax.swing.*;
@@ -12,22 +13,19 @@ import java.awt.event.MouseEvent;
 
 public class Login extends JFrame {
 
+   private Color colorFondoLogin = new Color(255, 255, 255);
+    private Color colorFondoDerecho = new Color(2, 138, 199);
     public Login() {
-        //JFrame frame = new JFrame();
 
 
-        //setUndecorated(true);
-        ImageIcon logo1 = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/Ha-100px.png"));
-        setIconImage(logo1.getImage().getScaledInstance(80,80,Image.SCALE_SMOOTH));
-
-        setSize(925, 545);
+        setSize(800, 545);
         setLocationRelativeTo(null);
-        JPanel panel = new JPanel(new BorderLayout());
+        JPanel panel = new JPanel(null);
         //setContentPane(panel);
         add(panel);
         //panel.setBorder(new EmptyBorder(5, 5, 5, 5));//para ponerle un marco
-        setVisible(true);
-        setResizable(false);
+        FrameUtils.configuraFrame(this);
+        FrameUtils.agregaBotonX(panel,colorFondoDerecho);
 
 //        frame.add(panel);
 //        frame.setSize(925, 545);
@@ -36,14 +34,23 @@ public class Login extends JFrame {
 //        frame.setResizable(false);
 
         System.out.println("¡Hola! El botón ha sido presionado.");
-        Color colorFondo = new Color(97, 156, 199);
+
         JPanel cajaLogin = new JPanel(null);
-        cajaLogin.setSize(400, 527);
+        cajaLogin.setBounds(0,0 ,495,545);
+        //cajaLogin.setSize(400, 527);
         // cajaLogin.setLayout(new GridLayout(8,1));
         // cajaLogin.setBorder(new EmptyBorder(5, 5, 5, 5));//para ponerle un marco
 
-        cajaLogin.setBackground(colorFondo);
+        cajaLogin.setBackground(colorFondoLogin);
 
+        JLabel logo = new JLabel(new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/lOGO-50PX.png")));
+        logo.setBounds(50,50,50,50);
+        cajaLogin.add(logo);
+
+        JLabel labelIniciaSesion = new JLabel("Inicia Secion");
+        labelIniciaSesion.setBounds(100 ,50 , 150 ,20);
+        labelIniciaSesion.setFont(new Font("Roboto", Font.PLAIN, 18));
+        cajaLogin.add(labelIniciaSesion);
 //            cajaLogin.setBackground(new Color(12, 138, 199));
 //            cajaLogin.setBounds(484, 0, 304, 527);
 //            panel.add(cajaLogin);
@@ -73,8 +80,8 @@ public class Login extends JFrame {
         textFieldUsuario.setBorder(borderBottom);
         textFieldPassword.setBorder(borderBottom);
         // Desactivar el borde pintado y el área de contenido pintada
-        textFieldUsuario.setBackground(colorFondo);
-        textFieldPassword.setBackground(colorFondo);
+        textFieldUsuario.setBackground(colorFondoLogin);
+        textFieldPassword.setBackground(colorFondoLogin);
 
         textFieldUsuario.addFocusListener(new FocusAdapter() {
             @Override
@@ -192,32 +199,20 @@ public class Login extends JFrame {
 
         cajaLogin.add(botonLogOut);//agrego este objeto imagen al panelderecho
         // cajaLogin.setLayout(null);
-
+        panel.add(cajaLogin);
         // Importante: Si agregaste un nuevo componente al panel, debes actualizar su diseño
 //            cajaLogin.revalidate();
 //            cajaLogin.repaint();
 
 
+        JPanel panelDerecho = new JPanel();
         ImageIcon imagenDerecha = new ImageIcon(HotelAluraFrame.class.getResource("/imagenes/img-hotel-login-.png"));
-        Image scaledInstance = imagenDerecha.getImage().getScaledInstance(420, 530, Image.SCALE_SMOOTH);
-        //JPanel cajaderecha = new JPanel((LayoutManager) imagenescaleada);
-        //private JPanel panel = new JPanel(new GridLayout(1,1));
-        JLabel labelIzDerecha = new JLabel(new ImageIcon(scaledInstance));
-        //cajaderecha.add(labelIzDerecha);
+        JLabel labelIzDerecha = new JLabel(new ImageIcon(imagenDerecha.getImage().getScaledInstance(305, 545, Image.SCALE_SMOOTH)));
+        panelDerecho.add(labelIzDerecha);
+        panelDerecho.setBounds(495,0,305,545);
+        panelDerecho.setBackground(colorFondoDerecho);
+        panel.add(panelDerecho);
 
-        JPanel footer = new JPanel(new FlowLayout(FlowLayout.CENTER));//para poner el texto en el centro
-        JLabel copyRigt = new JLabel("Desarrollado por Tyrone Pilay en © 2023");
-        copyRigt.setForeground(Color.white);// el setForeground es para canbiar el color del font
-        footer.add(copyRigt);
-        footer.setBackground(new Color(33, 85, 155));
-        //copyRigt.setHorizontalTextPosition(FlowLayout.CENTER);
-        panel.add(footer, BorderLayout.SOUTH);
-
-        panel.add(cajaLogin, BorderLayout.CENTER);
-        panel.add(labelIzDerecha, BorderLayout.EAST);
-        panel.revalidate();
-        panel.repaint();
-//        HotelAluraFrame nuevaVentana = new HotelAluraFrame();
-//        nuevaVentana.setIconImage(logo1.getImage());
+        setVisible(true);
     }
 }
