@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f67bc61-398b-45d9-8452-d6d7f2b4acce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddc07928-608b-452f-a34c-afffc7daa749.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddc07928-608b-452f-a34c-afffc7daa749.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hotel_alura.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hotel_alura.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3f67bc61-398b-45d9-8452-d6d7f2b4acce" name="Changes" comment="test(prueba): PruebasA&#10;&#10;probando conventional commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,8 +198,17 @@
       <workItem from="1687547161296" duration="919000" />
       <workItem from="1689122211583" duration="53000" />
       <workItem from="1697660543898" duration="616000" />
-      <workItem from="1697661250688" duration="703000" />
+      <workItem from="1697661250688" duration="1441000" />
     </task>
+    <task id="LOCAL-00001" summary="test(prueba): PruebasA&#10;&#10;probando conventional commit">
+      <option name="closed" value="true" />
+      <created>1697662344053</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697662344053</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,10 +227,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="test(prueba): PruebasA&#10;&#10;probando conventional commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test(prueba): PruebasA&#10;&#10;probando conventional commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.github.lppedd.cc.CommitBuilderDialog">
+    <type>feat</type>
+    <scope>conductores</scope>
+    <body>Agregar búsqueda de conductores por nombre
+
+Añadida la funcionalidad que permite buscar conductores por su nombre. También se han realizado pruebas unitarias y de integración para asegurarse de que la búsqueda funciona correctamente.
+
+Pruebas relacionadas
+Pruebas unitarias para la búsqueda de conductores
+Pruebas de integración con la base de datos de conductores&quot;</body>
+    <footers>
+      <entry type="" value="" />
+    </footers>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hotel_alura$HotelAluraMain.ic" NAME="HotelAluraMain Coverage Results" MODIFIED="1684616325788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
