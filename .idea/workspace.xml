@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f67bc61-398b-45d9-8452-d6d7f2b4acce" name="Changes" comment="test(prueba): PruebasA&#10;&#10;probando conventional commit">
+    <list default="true" id="3f67bc61-398b-45d9-8452-d6d7f2b4acce" name="Changes" comment="feat(conductores): &#10;&#10;Agregar búsqueda de conductores por nombre&#10;&#10;Añadida la funcionalidad que permite buscar conductores por su nombre. También se han realizado pruebas unitarias y de integración para asegurarse de que la búsqueda funciona correctamente.&#10;&#10;Pruebas relacionadas&#10;Pruebas unitarias para la búsqueda de conductores&#10;Pruebas de integración con la base de datos de conductores&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tyrone/hotel_alura/controller/Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.ConventionalCommit",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
     "spring.configuration.checksum": "8a5da52ed126447d359e70c05721a8aa",
     "vue.rearranger.settings.migration": "true"
   },
@@ -198,7 +199,8 @@
       <workItem from="1687547161296" duration="919000" />
       <workItem from="1689122211583" duration="53000" />
       <workItem from="1697660543898" duration="616000" />
-      <workItem from="1697661250688" duration="1441000" />
+      <workItem from="1697661250688" duration="3163000" />
+      <workItem from="1697742384435" duration="1791000" />
     </task>
     <task id="LOCAL-00001" summary="test(prueba): PruebasA&#10;&#10;probando conventional commit">
       <option name="closed" value="true" />
@@ -208,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697662344053</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat(conductores): &#10;&#10;Agregar búsqueda de conductores por nombre&#10;&#10;Añadida la funcionalidad que permite buscar conductores por su nombre. También se han realizado pruebas unitarias y de integración para asegurarse de que la búsqueda funciona correctamente.&#10;&#10;Pruebas relacionadas&#10;Pruebas unitarias para la búsqueda de conductores&#10;Pruebas de integración con la base de datos de conductores&quot;">
+      <option name="closed" value="true" />
+      <created>1697662821354</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697662821354</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,25 +238,12 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test(prueba): PruebasA&#10;&#10;probando conventional commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="test(prueba): PruebasA&#10;&#10;probando conventional commit" />
+    <MESSAGE value="feat(conductores): &#10;&#10;Agregar búsqueda de conductores por nombre&#10;&#10;Añadida la funcionalidad que permite buscar conductores por su nombre. También se han realizado pruebas unitarias y de integración para asegurarse de que la búsqueda funciona correctamente.&#10;&#10;Pruebas relacionadas&#10;Pruebas unitarias para la búsqueda de conductores&#10;Pruebas de integración con la base de datos de conductores&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(conductores): &#10;&#10;Agregar búsqueda de conductores por nombre&#10;&#10;Añadida la funcionalidad que permite buscar conductores por su nombre. También se han realizado pruebas unitarias y de integración para asegurarse de que la búsqueda funciona correctamente.&#10;&#10;Pruebas relacionadas&#10;Pruebas unitarias para la búsqueda de conductores&#10;Pruebas de integración con la base de datos de conductores&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
-  </component>
-  <component name="com.github.lppedd.cc.CommitBuilderDialog">
-    <type>feat</type>
-    <scope>conductores</scope>
-    <body>Agregar búsqueda de conductores por nombre
-
-Añadida la funcionalidad que permite buscar conductores por su nombre. También se han realizado pruebas unitarias y de integración para asegurarse de que la búsqueda funciona correctamente.
-
-Pruebas relacionadas
-Pruebas unitarias para la búsqueda de conductores
-Pruebas de integración con la base de datos de conductores&quot;</body>
-    <footers>
-      <entry type="" value="" />
-    </footers>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hotel_alura$HotelAluraMain.ic" NAME="HotelAluraMain Coverage Results" MODIFIED="1684616325788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
